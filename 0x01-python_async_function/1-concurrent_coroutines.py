@@ -15,9 +15,10 @@ sys.modules[module_name] = module
 spec.loader.exec_module(module)
 wait_random = module.wait_random
 
+
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Spawn multiple wait_random coroutines and return a list of delays in 
+    Spawn multiple wait_random coroutines and return a list of delays in
     ascending order.
 
     Args:
